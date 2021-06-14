@@ -1,0 +1,105 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run mock",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/invoices6-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/logaligroupa21invoices6/test/mockServer.html",
+        "--ui5",
+        "{\"version\":\".\"}"
+      ],
+      "cwd": "${workspaceFolder}/invoices6",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/invoices6/invoices6\"}"
+      },
+      "envFile": "${workspaceFolder}/invoices6/.env5",
+      "preLaunchTask": "Build invoices6"
+    },
+    {
+      "name": "Run Qunit-test invoices6",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/invoices6-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/logaligroupa21invoices6/test/unit/unitTests.qunit.html",
+        "--ui5",
+        "{\"version\":\".\"}"
+      ],
+      "cwd": "${workspaceFolder}/invoices6",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/invoices6/invoices6\"}"
+      },
+      "envFile": "${workspaceFolder}/invoices6/.env9",
+      "preLaunchTask": "Build invoices6"
+    },
+    {
+      "name": "Run OpaTest-invoices",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/invoices6-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/logaligroupa21invoices6/test/integration/opaTests.qunit.html",
+        "--ui5",
+        "{\"version\":\".\"}"
+      ],
+      "cwd": "${workspaceFolder}/invoices6",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/invoices6/invoices6\"}"
+      },
+      "envFile": "${workspaceFolder}/invoices6/.env18",
+      "preLaunchTask": "Build invoices6"
+    },
+    {
+      "name": "Run invoices6-invoices6",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/invoices6-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/logaligroupa21invoices6/index.html",
+        "--ui5",
+        "{\"version\":\".\"}"
+      ],
+      "cwd": "${workspaceFolder}/invoices6",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/invoices6/invoices6\"}"
+      },
+      "envFile": "${workspaceFolder}/invoices6/.env19",
+      "preLaunchTask": "Build invoices6"
+    },
+    {
+      "name": "Run invoices6-invoices6",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/invoices6-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/logaligroupa21invoices6/index.html",
+        "--ui5",
+        "{\"version\":\".\"}"
+      ],
+      "cwd": "${workspaceFolder}/invoices6",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/invoices6/invoices6\"}"
+      },
+      "envFile": "${workspaceFolder}/invoices6/.env20",
+      "preLaunchTask": "Build invoices6"
+    }
+  ]
+}

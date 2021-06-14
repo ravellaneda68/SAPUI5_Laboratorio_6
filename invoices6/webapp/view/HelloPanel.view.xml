@@ -1,0 +1,38 @@
+<mvc:View controllerName="logaligroupa21.invoices6.controller.HelloPanel"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    displayBlock="true">
+
+                        <Panel headerText="{i18n>helloPanel}" 
+                        class="sapUiResponsiveMargin" 
+                        width="auto"
+                        expandable="{device>/system/phone}"
+                        expanded="{= !${device>/system/phone}}"
+                        accessibleRole="Region">
+                            <content>
+                                <Button id="helloDialogButton" 
+                                        icon="sap-icon://action"  
+                                        text="{i18n>helloDialogBut}" 
+                                        type="Emphasized" 
+                                        press=".onOpenDialog" 
+                                        class="sapuISmallMarginEnd sapUiVisibleOnlyOnDesktop"/> 
+
+                                <Button text="{i18n>showhelloButtonText}" 
+                                        type="Emphasized"
+                                         press=".onShowHello" 
+                                         class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiHideOnDesktop"/>
+
+                                    <Input value="{/recipient/name}" 
+                                        valueLiveUpdate="true"
+                                        textAlign="Center" 
+                                        width="60%"
+                                        class="sapUiSmallMarginBegin"/>
+
+                                    <Text text="Hello {/recipient/name}" 
+                                            class="sapUiSmallMarginBegin sapUiSmallMarginTop boldElements sapThemeHighlight-asColor" />
+                            </content>
+                        </Panel>
+                            <core:Fragment fragmentName="logaligroupa21.invoices6.view.Form01"  type="XML"/>
+</mvc:View>
+ 
