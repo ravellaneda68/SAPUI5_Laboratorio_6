@@ -15,7 +15,6 @@ sap.ui.define ([
  * 
  */
    function(Controller, JSONModel, InvoicesFormatter, Filter, FilterOperator){
-
     return Controller.extend("logaligroupa21.invoices6.controller.InvoicesList",{
         formatter: InvoicesFormatter,
 
